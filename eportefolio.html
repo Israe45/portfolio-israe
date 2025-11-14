@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Derfoufi Israe</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="eportfolio.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <a href="#" class="logo">Portfolio.</a>
+
+            <nav class="navbar">
+                <a href="#Acceuil" class="active">Acceuil</a>
+                <a href="#Profil">Profil</a>
+                <a href="#Mon parcours">Mon parcours</a>
+                <a href="#Mes compétencese">Mes compétences</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-detail">
+                <h1>Derfoufi Israe</h1>
+                <h2>Élève en BTS SIO</h2>
+                <p>
+                    Je suis actuellement étudiante au lycée Turgot en première année de BTS SIO (Services Informatiques aux Organisations) 
+                    Actuellement toujours en cours d'étude , je vous propose sur ce portfolio de retrouver ci-dessous les différentes études, et projet professionnel que j'ai pu entreprendre au sein de ma carrière.
+
+                    Vous retrouverez ci-dessous mon CV ainsi que mes différents projets 
+                </p>
+                <div class="download-social">
+                    <div class="social-icons">
+                        <a href="/* mettre ton lien github ici */" target="_blank"><i class="ri-github-fill"></i></a>
+                        <a href="/* mettre ton lien linkedin ici */" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <div class="img-box">
+                    <img src="https://thumbs.dreamstime.com/z/image-de-profil-personnage-dessin-anim-d-avatar-jeune-femme-conception-graphique-port-illustration-vecteur-anim%C3%A9-bandana-brune-149657995.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="Profil" id="Profil">
+            <h2>Profil</h2>
+            <p>Texte sur toi ici...</p>
+        </section>
+
+        <section class="mon-parcours" id="mon-parcours">
+            <h2>Mon parcours</h2>
+            <p>Projets ici...</p>
+        </section>
+
+        <section class="mes-competences" id="mes-competences">
+            <h2>Mes compétences</h2>
+            <p>Ce que tu proposes...</p>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            
+            <section class="contact-section">
+    <div class="contact-intro">
+        <span class="big-title">✉️ Me contacter</span>
+        <p>
+            Si vous avez des questions ou des suggestions, n’hésitez pas à m'envoyer un message.
+        </p>
+    </div>
+
+    <div class="contact-form">
+        <div class="contact-box">
+            <form enctype="multipart/form-data" method="POST" action="https://api.tamdaz.fr/contact/send">
+                <div class="form-row">
+                    <label>
+                        Nom et prénom :
+                        <input class="input" name="full_name" type="text" required>
+                    </label>
+                    <label>
+                        Adresse email :
+                        <input class="input" name="email" type="email" required>
+                    </label>
+                </div>
+
+                <label>
+                    Votre message (5000 caractères maximum) :
+                    <textarea class="textarea" name="message" required></textarea>
+                </label>
+
+                <button class="button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
