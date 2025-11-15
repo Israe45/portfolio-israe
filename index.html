@@ -77,29 +77,37 @@
         </p>
     </div>
 
-    <div class="contact-form">
-        <div class="contact-box">
-            <form enctype="multipart/form-data" method="POST" action="https://api.tamdaz.fr/contact/send">
-                <div class="form-row">
-                    <label>
-                        Nom et prénom :
-                        <input class="input" name="full_name" type="text" required>
-                    </label>
-                    <label>
-                        Adresse email :
-                        <input class="input" name="email" type="email" required>
-                    </label>
-                </div>
+ <div class="contact-form">
+    <div class="contact-box">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            
+            <!-- Clé Web3Forms obligatoire -->
+            <input type="hidden" name="access_key" value="db1cca7d-97e8-4ed0-a5c4-9d5fcbb79ada">
 
+            <!-- Email de réception (optionnel mais recommandé) -->
+            <input type="hidden" name="email" value="israee.450@gmail.com">
+
+            <div class="form-row">
                 <label>
-                    Votre message (5000 caractères maximum) :
-                    <textarea class="textarea" name="message" required></textarea>
+                    Nom et prénom :
+                    <input class="input" name="full_name" type="text" required>
                 </label>
+                <label>
+                    Adresse email :
+                    <input class="input" name="email" type="email" required>
+                </label>
+            </div>
 
-                <button class="button" type="submit">Envoyer</button>
-            </form>
-        </div>
+            <label>
+                Votre message :
+                <textarea class="textarea" name="message" required></textarea>
+            </label>
+
+            <button class="button" type="submit">Envoyer</button>
+        </form>
     </div>
+</div>
+
 </section>
 
         </section>
@@ -108,3 +116,4 @@
 
 </body>
 </html>
+
