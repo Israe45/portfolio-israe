@@ -212,6 +212,23 @@ section h2 {
     backdrop-filter: blur(10px);
 }
 
+.social-icons a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.social-icons a:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    color: #333;
+}
+
 .form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -255,4 +272,5 @@ section h2 {
 /*quand on met la souris dessus*/
 .button:hover {
     background-color: #d63da8;
+
 }
